@@ -52,4 +52,4 @@ Track your career journey from learning skills to landing your dream job.
 - Frontend
 - Backend
 - Full Stack
-- AI /
+- AI 
