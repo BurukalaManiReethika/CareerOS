@@ -10,6 +10,17 @@
 
 <style>
 
+body{
+background:#f4f4f4;
+}
+
+header{
+background:#111827;
+color:white;
+padding:20px;
+text-align:center;
+}
+
 .resume-container{
 max-width:1200px;
 margin:30px auto;
@@ -38,4 +49,110 @@ font-weight:bold;
 }
 
 .form-group input,
-.form
+.form-group textarea{
+width:100%;
+padding:12px;
+border:1px solid #ddd;
+border-radius:8px;
+}
+
+textarea{
+height:100px;
+resize:none;
+}
+
+button{
+padding:12px 20px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+margin-top:10px;
+}
+
+.resume-preview{
+padding:10px;
+}
+
+.resume-preview h1{
+color:#2563eb;
+margin-bottom:10px;
+}
+
+.resume-preview h3{
+margin-top:20px;
+color:#111827;
+}
+
+@media(max-width:768px){
+.resume-container{
+grid-template-columns:1fr;
+}
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>Resume Builder</h1>
+</header>
+
+<div class="resume-container">
+
+<div class="form-section">
+
+<div class="form-group">
+<label>Full Name</label>
+<input type="text" id="name">
+</div>
+
+<div class="form-group">
+<label>Email</label>
+<input type="email" id="email">
+</div>
+
+<div class="form-group">
+<label>Phone</label>
+<input type="text" id="phone">
+</div>
+
+<div class="form-group">
+<label>Skills</label>
+<textarea id="skills"></textarea>
+</div>
+
+<div class="form-group">
+<label>Education</label>
+<textarea id="education"></textarea>
+</div>
+
+<div class="form-group">
+<label>Projects</label>
+<textarea id="projects"></textarea>
+</div>
+
+<button onclick="generateResume()">
+Generate Resume
+</button>
+
+</div>
+
+<div class="preview-section">
+
+<div id="resumePreview" class="resume-preview">
+
+<h2>Your Resume Preview</h2>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="js/resume.js"></script>
+
+</body>
+</html>
