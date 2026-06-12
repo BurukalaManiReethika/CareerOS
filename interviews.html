@@ -1,0 +1,109 @@
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Interview Tracker</title>
+
+<link rel="stylesheet"
+href="css/style.css">
+
+<style>
+
+.container{
+max-width:1200px;
+margin:30px auto;
+padding:20px;
+}
+
+.form-box{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+input,
+textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ddd;
+border-radius:8px;
+}
+
+textarea{
+height:120px;
+resize:none;
+}
+
+button{
+padding:12px 20px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+.interview-card{
+background:white;
+padding:20px;
+margin-top:15px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.delete{
+background:red;
+margin-top:10px;
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>Interview Tracker</h1>
+</header>
+
+<div class="container">
+
+<div class="form-box">
+
+<input
+type="text"
+id="company"
+placeholder="Company">
+
+<input
+type="date"
+id="date">
+
+<input
+type="text"
+id="round"
+placeholder="Round">
+
+<textarea
+id="notes"
+placeholder="Interview Notes">
+</textarea>
+
+<button onclick="addInterview()">
+Save Interview
+</button>
+
+</div>
+
+<div id="interviewList"></div>
+
+</div>
+
+<script src="js/interviews.js"></script>
+
+</body>
+</html>
