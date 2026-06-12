@@ -3,12 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>CareerOS Portfolio Generator</title>
+<title>Portfolio Generator</title>
 
 <link rel="stylesheet" href="css/style.css">
 
 <style>
+
+body{
+background:#f4f4f4;
+}
 
 .portfolio-container{
 max-width:1200px;
@@ -22,63 +25,85 @@ padding:20px;
 .form-panel,
 .preview-panel{
 background:white;
-padding:25px;
-border-radius:12px;
+padding:20px;
+border-radius:10px;
 box-shadow:0 0 10px rgba(0,0,0,.1);
 }
 
-.form-group{
-margin-bottom:15px;
-}
-
-.form-group label{
-display:block;
-font-weight:bold;
-margin-bottom:5px;
-}
-
-.form-group input,
-.form-group textarea{
+input,
+textarea{
 width:100%;
 padding:12px;
+margin-bottom:10px;
 border:1px solid #ddd;
 border-radius:8px;
 }
 
 textarea{
 height:100px;
-resize:none;
 }
 
-.btn{
+button{
 padding:12px 20px;
-border:none;
 background:#2563eb;
 color:white;
+border:none;
 border-radius:8px;
 cursor:pointer;
-margin-top:10px;
 }
 
 .preview{
 padding:20px;
 }
 
-.preview-header{
-text-align:center;
-margin-bottom:20px;
-}
-
-.preview-header h1{
-font-size:32px;
-}
-
-.preview-section{
-margin-bottom:20px;
-}
-
-.project-card{
-padding:12px;
-margin-top:10px;
+.project{
 background:#f4f4f4;
-border-radius:8px
+padding:10px;
+margin-top:10px;
+border-radius:8px;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<h1 style="text-align:center;padding:20px;">
+Portfolio Generator
+</h1>
+</header>
+
+<div class="portfolio-container">
+
+<div class="form-panel">
+
+<input type="text" id="name" placeholder="Your Name">
+
+<textarea id="bio" placeholder="Short Bio"></textarea>
+
+<textarea id="skills" placeholder="Skills"></textarea>
+
+<textarea id="projects" placeholder="Projects (one per line)"></textarea>
+
+<button onclick="generatePortfolio()">
+Generate Portfolio
+</button>
+
+</div>
+
+<div class="preview-panel">
+
+<div id="preview">
+
+<h2>Portfolio Preview</h2>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="js/portfolio.js"></script>
+
+</body>
+</html>
