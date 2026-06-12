@@ -1,0 +1,161 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4f4f4;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+background:#111827;
+color:white;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+}
+
+.hero{
+height:80vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+max-width:700px;
+}
+
+.btn{
+margin-top:30px;
+padding:12px 25px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:8px;
+}
+
+.features{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:40px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#111827;
+color:white;
+}
+
+.login-container{
+width:350px;
+margin:100px auto;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.login-container h1{
+margin-bottom:20px;
+}
+
+.login-container input{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+}
+
+.login-container button{
+width:100%;
+padding:12px;
+background:#2563eb;
+border:none;
+color:white;
+cursor:pointer;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+background:#111827;
+color:white;
+}
+
+header button{
+padding:10px 20px;
+border:none;
+cursor:pointer;
+}
+
+.dashboard{
+padding:30px;
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.box{
+background:white;
+padding:30px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.quick-links{
+padding:30px;
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+justify-content:center;
+}
+
+.quick-links a{
+padding:12px 20px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:8px;
+}
