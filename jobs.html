@@ -1,0 +1,106 @@
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CareerOS - Job Tracker</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+.container{
+max-width:1200px;
+margin:30px auto;
+padding:20px;
+}
+
+.form-box{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+margin-bottom:20px;
+}
+
+input,
+select{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ddd;
+border-radius:8px;
+}
+
+button{
+padding:12px 20px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+.job-card{
+background:white;
+padding:15px;
+margin-top:15px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.actions{
+margin-top:10px;
+display:flex;
+gap:10px;
+}
+
+.delete{
+background:red;
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>Job Tracker</h1>
+</header>
+
+<div class="container">
+
+<div class="form-box">
+
+<input
+type="text"
+id="company"
+placeholder="Company Name">
+
+<input
+type="text"
+id="position"
+placeholder="Position">
+
+<select id="status">
+<option>Applied</option>
+<option>Interview</option>
+<option>Offer</option>
+<option>Rejected</option>
+</select>
+
+<button onclick="addJob()">
+Add Job
+</button>
+
+</div>
+
+<div id="jobList"></div>
+
+</div>
+
+<script src="js/jobs.js"></script>
+
+</body>
+</html>
